@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
+  font-family: sans-serif;
+}
+
+.container {
+  text-align: center;
+  margin: 0 50px;
+}
+
+.container .header {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 20px;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-shadow: 0 5px 10px 0 #00000010;
+          box-shadow: 0 5px 10px 0 #00000010;
+  z-index: 100;
+  color: lightskyblue;
+}
+
+.container .content {
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.container .content .search-bar {
+  width: 560px;
+  height: 44px;
+  background: white;
+  margin: 20px auto;
+  border-radius: 22px;
+  -webkit-box-shadow: 0 1px 8px 0 rgba(33, 33, 33, 0.25);
+          box-shadow: 0 1px 8px 0 rgba(33, 33, 33, 0.25);
+}
+
+.container .content .apps-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(156px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
+  gap: 20px 1px;
+  margin-top: 50px;
+}
+
+.container .content .apps-grid > div {
+  width: 156px;
+  height: 182px;
+  border-radius: 5px;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.container .content .apps-grid > div a {
+  text-decoration: none;
+  color: black;
+}
+
+.container .content .apps-grid > div .app-icon {
+  width: 96px;
+  height: 96px;
+  background: rgba(255, 182, 193, 0.5);
+  margin: 0px auto 20px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content .apps-grid > div .app-icon img {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.container .content .apps-grid > div .app-title {
+  width: 120px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container .content .apps-grid > div:hover {
+  background: rgba(173, 215, 229, 0.3);
+}
+/*# sourceMappingURL=style.css.map */

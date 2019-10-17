@@ -1,0 +1,12 @@
+{
+    "app1": {
+        "title": "APP 1",
+        "href": "/webapps/app1/index.html",
+        "icon": "icon1"
+    },
+    "app2": {
+        "title": "APP 2",
+        "href": "/webapps/app2/index.html",
+        "icon": "icon2"
+    }
+}
