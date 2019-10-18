@@ -26,7 +26,8 @@ body {
 		right: 0;
 		box-shadow: 0 5px 10px 0 #00000010;
 		z-index: 100;
-		color: lightskyblue
+		color: lightskyblue;
+		user-select: none;
 	}
 
 	.content {

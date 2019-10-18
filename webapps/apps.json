@@ -8,5 +8,10 @@
         "title": "APP 2",
         "href": "/webapps/app2/index.html",
         "icon": "icon2"
+    },
+    "code-on-web": {
+        "title": "Code on Web",
+        "href": "/webapps/code-on-web/index.html",
+        "icon": "icon3"
     }
 }

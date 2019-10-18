@@ -31,6 +31,10 @@ body {
           box-shadow: 0 5px 10px 0 #00000010;
   z-index: 100;
   color: lightskyblue;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .container .content {
