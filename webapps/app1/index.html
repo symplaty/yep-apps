@@ -9,28 +9,30 @@
 <body>
     <canvas id="canvas" style="display: none;"></canvas>
 
-    <img src="" alt="" id="img0">
+    <img src="./img.jpg" id="img0">
 
     <img src="" alt="" id="img" >
     
     <script>
         const canvas = document.getElementById("canvas");
         const c = canvas.getContext("2d");
-        const img = new Image();
-        img.setAttribute("crossOrigin",'Anonymous');
-        img.src = "./img.jpg";
-
-        var width = img.width;
-        var height = img.height;
-        var cWidth = width * 0.5;
-        var cHeight = height * 0.5;
-        canvas.width = cWidth;
-        canvas.height = cHeight;
-
+        // const img = new Image();
+        // img.setAttribute("crossOrigin",'Anonymous');
+        // img.src = "./img.jpg";
+        const img = document.getElementById("img0");
+        
         img.addEventListener("load", e => {
+            var width = img.width;
+            var height = img.height;
+            var cWidth = width * 0.5;
+            var cHeight = height * 0.5;
+            canvas.width = cWidth;
+            canvas.height = cHeight;
+            
             c.drawImage(img, 0, 0, cWidth , cHeight);
-            const imgSrc = canvas.toDataURL("image/jpeg" , 1);
-            const imgDisplay = document.getElementById("img")
+            
+            const imgSrc = canvas.toDataURL("image/png", 1);
+            const imgDisplay = document.getElementById("img");
             imgDisplay.width = width ;
             imgDisplay.height = height;
             imgDisplay.src = imgSrc;
