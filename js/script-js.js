@@ -1,5 +1,5 @@
 // Json file url
-var jsonUrl = "/webapps/apps.json";
+var jsonUrl = "./webapps/apps.json";
 // To store app list read from json file
 var appList = [];
 // DOM elements
