@@ -40,6 +40,8 @@ function createAppElements() {
         var img = document.createElement("img");
         var r = /\/[^\/]*$/;
         var imgSrc = app["href"].replace(r, "/favicon.ico");
+        console.log(imgSrc);
+        
         img.src = imgSrc;
         appIcon.appendChild(img);
         var appTitle = document.createElement("div");

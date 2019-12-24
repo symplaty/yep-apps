@@ -1,17 +1,17 @@
 {
     "app1": {
         "title": "APP 1",
-        "href": "/webapps/app1/index.html",
+        "href": "./webapps/app1/index.html",
         "icon": "icon1"
     },
     "app2": {
         "title": "APP 2",
-        "href": "/webapps/app2/index.html",
+        "href": "./webapps/app2/index.html",
         "icon": "icon2"
     },
     "code-on-web": {
         "title": "Code on Web",
-        "href": "/webapps/code-on-web/index.html",
+        "href": "./webapps/code-on-web/index.html",
         "icon": "icon3"
     }
 }

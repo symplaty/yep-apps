@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>APP 1</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>APP 1</h1>
+    <canvas id="canvas" style="display: none;"></canvas>
+
+    <img src="" alt="" id="img0">
+
+    <img src="" alt="" id="img" >
+    
+    <script>
+        const canvas = document.getElementById("canvas");
+        const c = canvas.getContext("2d");
+        const img = new Image();
+        img.setAttribute("crossOrigin",'Anonymous');
+        img.src = "./img.jpg";
+
+        var width = img.width;
+        var height = img.height;
+        var cWidth = width * 0.5;
+        var cHeight = height * 0.5;
+        canvas.width = cWidth;
+        canvas.height = cHeight;
+
+        img.addEventListener("load", e => {
+            c.drawImage(img, 0, 0, cWidth , cHeight);
+            const imgSrc = canvas.toDataURL("image/jpeg" , 1);
+            const imgDisplay = document.getElementById("img")
+            imgDisplay.width = width ;
+            imgDisplay.height = height;
+            imgDisplay.src = imgSrc;
+        });
+
+    </script>
 </body>
 </html>
